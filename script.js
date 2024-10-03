@@ -14,11 +14,18 @@ listContainer.addEventListener("click", function (e) {
     if (e.target.tagName === "LI") {
         e.target.classList.toggle("checked"); //if it is added remove it and if it does not sxist add it
         saveTask();
+        Notification.requestPermission().then(perm =>{
+            if(perm==="granted"){
+                new Notification("Good job!", {
+                    body:"No Pain No Gain!",
+                })
+            }
+        } )
     }
     else if (e.target.tagName === "SPAN") {
         e.target.parentElement.remove();
         saveTask();
-
+      
     }
     else if (e.target.tagName === "BUTTON") {
         let li = e.target.parentElement;
@@ -46,6 +53,10 @@ function addTask() {
         let editBtn = document.createElement("button");
         editBtn.classList.add('btn', 'btn-outline-success', 'fas', 'fa-edit');
         li.appendChild(editBtn);
+        Notification.requestPermission().then(perm =>{
+            if(perm==="granted"){
+                new Notification("You Have Added A new Task!🥳")
+            }})
     }
     inputBox.value = "";  //so that input text become empty again
     saveTask();

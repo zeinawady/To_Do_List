@@ -12,12 +12,10 @@
 li {
     list-style: none;
 }
-.app{
+body{
     background-image: url(../images/background3.jpg);
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
 }
 
 .todo-app {

@@ -2,13 +2,15 @@
 
 ## Description
 
-A simple To Do List application that allows users to add, mark, and remove tasks. This project uses HTML, CSS, and JavaScript.
+A simple To-do list application that allows users to add, edit, mark, and remove tasks. This project uses HTML, CSS, Bootstrap, and JavaScript.
 
 ### Features
 
 - Add new tasks
 - Mark tasks as completed
 - Remove tasks
+- Edit tasks
+- Date is Displayed Automatically
 
 ### Usage
 
@@ -20,11 +22,17 @@ A simple To Do List application that allows users to add, mark, and remove tasks
    - Click on a task to toggle its completed state (check/uncheck).
 
 3. **Removing a Task:**
-   - Hover over a task to reveal the "x" sign.
-   - Click the "x" to remove the task from the list.
+   - Click the Trash icon to remove a task from the list.
+     
+4. **Editing a Task:**
+   - Click the edit icon next to the task you want to edit.
+   - Modify the task in the prompt that appears.
+   - Press Enter or click the edit icon again to save the changes.
+     
+5. **Displaying Date Automatically:**
+   - Current date will be displayed automatically at the top of the to-do list when the page loads.
      
 ### Implementation Details
 
-- **Hover Effect:** The "x" sign appears when you hover over a task, allowing you to remove it.
 - **Local Storage:** Tasks are saved in local storage, so they persist across page reloads.
 - **Enter Key Functionality:** Pressing Enter after typing a task will also add it to the list.
